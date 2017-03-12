@@ -8,6 +8,28 @@ body {
   margin: auto;
   padding-top: 30px;
 }
+.article-tag-list {
+  list-style: none;
+  padding: 0;
+}
+.article-tag-list-item {
+  display: inline-block;
+  margin-right: 6px;
+}
+.article-tag-list-link {
+  text-decoration: none;
+  color: #fff;
+  background: #e4ad00;
+  padding: 3px 10px;
+  font-size: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.post-date {
+  color: #989898;
+  font-size: 60%;
+  margin-top: 5px;
+}
 .header {
   background: #c0c0c0;
   color: #fff;
