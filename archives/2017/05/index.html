@@ -1,188 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <title>Архив: 2017/5 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://masterx2.github.io/archives/2017/05/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>mx2coding</title>
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://masterx2.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/11/Post-From-Outer-File/" class="archive-article-date">
-  <time datetime="2017-05-11T18:20:11.000Z" itemprop="datePublished">май 11</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/11/Post-From-Outer-File/">unGenerated Post from Future</a>
-    </h1>
-  
+<div class="header">mx2coding</div>
+<div class="wrap">
+<div class="post">
+	<div class="post-title">Строю блог на Hexo</div>
+	<div class="post-date">May 12, 2017</div>
+	<div class="post-tags"> <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tagcloud/">tagcloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/начало/">начало</a></li></ul></div>
+	<div class="post-content"><p>Решил забацать блог на <a href="https://hexo.io" target="_blank" rel="external">Hexo</a>. Пересмотрел много готовых решений, но все было не то, хотелось гибкости и комфорта, но так чтобы не делать всё с нуля.</p>
+<p>А тут простая идея, генерация статичного сайта из Markdown файлов и всё это на быстром nodejs</p>
+<p>Предустановленные шаблоны для слабаков, так что делаю с нуля, пока выглядит вот так =)</p>
+<img src="/images/first-shot.png" class="screenshot">
+<p><em>скриншот для истории</em></p>
+<p>Важным условием была возможность вставлять листинг кода на различных языках и скетчи из jsFiddle или Codepen</p>
+<p>Например <strong>JavaScript</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="keyword">this</span>.bar = <span class="string">'Hello,'</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    greet(name) &#123;</div><div class="line">        alert(<span class="string">`<span class="subst">$&#123;<span class="keyword">this</span>.bar&#125;</span> <span class="subst">$&#123;name&#125;</span>!`</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>или <strong>PHP</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Greet</span><span class="params">($name)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="string">'Hello, '</span>.$name.PHP_EOL;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>jsFiddle</strong></p>
+<iframe scrolling="no" width="100%" height="300" src="http://jsfiddle.net/m2L3221t/embedded/result,js/light" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Метки</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/first-example-coding-blog-hello/">first, example, coding blog, hello</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Облако меток</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/first-example-coding-blog-hello/" style="font-size: 10px;">first, example, coding blog, hello</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Архив</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">май 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">март 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Недавние записи</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/05/11/Post-From-Outer-File/">unGenerated Post from Future</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/11/This-is-new-Post-in-HexoJS-Blog-Engine/">This is new Post in HexoJS Blog Engine</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/11/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 MasterX2<br>
-      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
+</div>
 </body>
 </html>
